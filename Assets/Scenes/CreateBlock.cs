@@ -10,8 +10,13 @@ public class CreateBlock : MonoBehaviour
     // ブロックを設置する位置を一応リアルタイムで格納
     private Vector3 pos;
 
+    private GameObject Prefab;
     [SerializeField]
     private GameObject blockPrefab;
+    [SerializeField]
+    private GameObject ringPrefab;
+    [SerializeField]
+    private GameObject MPadPrefab;
     public GameObject BlockView;
 
     // Use this for initialization
@@ -19,6 +24,7 @@ public class CreateBlock : MonoBehaviour
     {
         // ↓ 画面中央の平面座標を取得する
         displayCenter = new Vector2(Screen.width / 2, Screen.height / 2);
+        Prefab = blockPrefab;
     }
 
     // Update is called once per frame
@@ -43,17 +49,25 @@ public class CreateBlock : MonoBehaviour
             // ↓ 右クリック
             if (Input.GetMouseButtonDown(1))
             {
-                if (!hit.collider.CompareTag("Block"))
+                if (!hit.collider.CompareTag("Item"))
                 {
-                    // 生成位置の変数の座標にブロックを生成
-                    Instantiate(blockPrefab, pos, Quaternion.identity);
+                    if (Prefab==MPadPrefab) 
+                    {
+                        // 生成位置の変数の座標にブロックを生成
+                        Instantiate(Prefab, new Vector3(Mathf.Floor(hit.point.x) + 0.5f, Mathf.Floor(hit.point.y) + 0.0f, Mathf.Floor(hit.point.z) + 0.5f), Quaternion.identity);
+                    }
+                    else
+                    {
+                        // 生成位置の変数の座標にブロックを生成
+                        Instantiate(Prefab, pos, Quaternion.identity);
+                    }
                 }
             }
 
             // ↓ 左クリック
             if (Input.GetMouseButtonDown(0))
             {
-                if (hit.collider.CompareTag("Block"))
+                if (hit.collider.CompareTag("Item"))
                 {
                     // ↓ レイが当たっているオブジェクトを削除
                     Destroy(hit.collider.gameObject);
@@ -64,4 +78,17 @@ public class CreateBlock : MonoBehaviour
         }
     }
 
+    public void ChangeBlock()
+    {
+        Prefab = blockPrefab;
+    }
+
+    public void ChangeRing()
+    {
+        Prefab = ringPrefab;
+    }
+    public void ChangeMPad()
+    {
+        Prefab = MPadPrefab;
+    }
 }
