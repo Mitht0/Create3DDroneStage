@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\CameraMove.cs" />
     <Compile Include="Assets\Scenes\CreateBlock.cs" />
+    <Compile Include="Assets\Scenes\GridView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
