@@ -59,6 +59,10 @@ public class CreateBlock : MonoBehaviour
             BlockView.transform.position = pos;
         }
 
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Create();
+        }
 
     }
 
