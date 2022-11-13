@@ -337,6 +337,7 @@
 "Assets/Scenes/CreateBlock.cs"
 "Assets/Scenes/GridView.cs"
 "Assets/Scenes/Operation.cs"
+"Assets/Scenes/Setting.cs"
 -langversion:9.0
 
 /deterministic

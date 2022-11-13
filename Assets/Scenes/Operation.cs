@@ -10,16 +10,21 @@ public class Operation : MonoBehaviour
     public CreateBlock CreateBlockScript;
     
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.X))
+        {
+            Destroy();
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            RotateX();
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            RotateY();
+        }
     }
 
     public void Destroy()

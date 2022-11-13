@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scenes\BaseBlock.cs" />
     <Compile Include="Assets\Scenes\Operation.cs" />
     <Compile Include="Assets\Scenes\GridView.cs" />
+    <Compile Include="Assets\Scenes\Setting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
