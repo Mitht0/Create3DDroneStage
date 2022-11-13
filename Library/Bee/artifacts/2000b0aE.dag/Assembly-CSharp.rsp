@@ -336,6 +336,7 @@
 "Assets/Scenes/CameraMove.cs"
 "Assets/Scenes/CreateBlock.cs"
 "Assets/Scenes/GridView.cs"
+"Assets/Scenes/Operation.cs"
 -langversion:9.0
 
 /deterministic

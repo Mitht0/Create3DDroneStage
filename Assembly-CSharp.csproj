@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scenes\CameraMove.cs" />
     <Compile Include="Assets\Scenes\CreateBlock.cs" />
     <Compile Include="Assets\Scenes\BaseBlock.cs" />
+    <Compile Include="Assets\Scenes\Operation.cs" />
     <Compile Include="Assets\Scenes\GridView.cs" />
   </ItemGroup>
   <ItemGroup>
