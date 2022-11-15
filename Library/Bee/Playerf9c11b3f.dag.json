@@ -403,17 +403,7 @@
         395,
         396,
         397,
-        398,
-        399,
-        400,
-        401,
-        402,
-        403,
-        404,
-        405,
-        406,
-        407,
-        408
+        398
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -14958,126 +14948,15 @@
     },
     {
       "Annotation": "PreprocessJS docs/index.html",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='C\\x3a/Users/Master/Desktop/Unity/Create3DDroneStage/docs/index.html'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Create3DDroneStage'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data.unityweb'\" \"FRAMEWORK_FILENAME='docs.framework.js.unityweb'\" \"CODE_FILENAME='docs.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"TOTAL_MEMORY=16777216\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.13f1'\" \"LOADER_FILENAME='docs.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal/index.html'\"  \"locals.outputPath='C\\x3a/Users/Master/Desktop/Unity/Create3DDroneStage/docs/index.html'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Create3DDroneStage'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data.unityweb'\" \"FRAMEWORK_FILENAME='docs.framework.js.unityweb'\" \"CODE_FILENAME='docs.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"TOTAL_MEMORY=16777216\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.13f1'\" \"LOADER_FILENAME='docs.loader.js'\"",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
+        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal/index.html"
       ],
       "Outputs": [
         "docs/index.html"
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 397
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/favicon.ico",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/favicon.ico"
-      ],
-      "Outputs": [
-        "docs/TemplateData/favicon.ico"
-      ],
-      "DebugActionIndex": 398
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/fullscreen-button.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/fullscreen-button.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/fullscreen-button.png"
-      ],
-      "DebugActionIndex": 399
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/progress-bar-empty-dark.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-dark.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/progress-bar-empty-dark.png"
-      ],
-      "DebugActionIndex": 400
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/progress-bar-empty-light.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-light.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/progress-bar-empty-light.png"
-      ],
-      "DebugActionIndex": 401
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/progress-bar-full-dark.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-dark.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/progress-bar-full-dark.png"
-      ],
-      "DebugActionIndex": 402
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/progress-bar-full-light.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-light.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/progress-bar-full-light.png"
-      ],
-      "DebugActionIndex": 403
-    },
-    {
-      "Annotation": "PreprocessJS docs/TemplateData/style.css",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='C\\x3a/Users/Master/Desktop/Unity/Create3DDroneStage/docs/TemplateData/style.css'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Create3DDroneStage'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data.unityweb'\" \"FRAMEWORK_FILENAME='docs.framework.js.unityweb'\" \"CODE_FILENAME='docs.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"TOTAL_MEMORY=16777216\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.13f1'\" \"LOADER_FILENAME='docs.loader.js'\"",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
-      ],
-      "Outputs": [
-        "docs/TemplateData/style.css"
-      ],
-      "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 404
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/unity-logo-dark.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-dark.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/unity-logo-dark.png"
-      ],
-      "DebugActionIndex": 405
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/unity-logo-light.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-light.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/unity-logo-light.png"
-      ],
-      "DebugActionIndex": 406
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/webgl-logo.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/webgl-logo.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/webgl-logo.png"
-      ],
-      "DebugActionIndex": 407
     },
     {
       "Annotation": "Player",
@@ -15094,20 +14973,10 @@
         390,
         395,
         396,
-        397,
-        398,
-        399,
-        400,
-        401,
-        402,
-        403,
-        404,
-        405,
-        406,
-        407
+        397
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 408
+      "DebugActionIndex": 398
     }
   ],
   "FileSignatures": [
@@ -15426,7 +15295,7 @@
       "Filter": "*.js"
     },
     {
-      "Path": "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default",
+      "Path": "C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal",
       "Recurse": 1
     },
     {
@@ -15476,7 +15345,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 408
+          "Player": 398
         }
 ,  "DefaultNodes": [
     0

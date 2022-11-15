@@ -6205,6 +6205,10 @@ struct CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908  : public MonoBehav
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BlockView_14;
 	// TMPro.TMP_Dropdown CreateBlock::dropdown
 	TMP_Dropdown_t73B37BFDA0D005451C7B750938AFB1748E5EA504* ___dropdown_15;
+	// System.Int32 CreateBlock::dropdownreturn
+	int32_t ___dropdownreturn_16;
+	// UnityEngine.GameObject CreateBlock::Canvas
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Canvas_17;
 };
 
 // GridView
@@ -7114,9 +7118,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3390[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3391[2] = 
 {
 	static_cast<int32_t>(offsetof(CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220, ___speed_4)),static_cast<int32_t>(offsetof(CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220, ___angle_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3392[12] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3392[14] = 
 {
-	static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___angleX_4)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___angleY_5)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___displayCenter_6)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___pos_7)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___hit_8)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___Prefab_9)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___blockPrefab_10)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___ringPrefab_11)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___MPadPrefab_12)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___LinePrefab_13)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___BlockView_14)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___dropdown_15)),};
+	static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___angleX_4)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___angleY_5)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___displayCenter_6)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___pos_7)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___hit_8)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___Prefab_9)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___blockPrefab_10)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___ringPrefab_11)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___MPadPrefab_12)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___LinePrefab_13)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___BlockView_14)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___dropdown_15)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___dropdownreturn_16)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___Canvas_17)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3393[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};

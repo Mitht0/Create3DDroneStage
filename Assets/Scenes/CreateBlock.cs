@@ -32,6 +32,9 @@ public class CreateBlock : MonoBehaviour
     //DropdownÇäiî[Ç∑ÇÈïœêî
     [SerializeField] 
     private TMP_Dropdown dropdown;
+    private int dropdownreturn=3;
+    //InvisibleCanvas
+    public GameObject Canvas;
 
     // Use this for initialization
     void Start()
@@ -63,7 +66,23 @@ public class CreateBlock : MonoBehaviour
         {
             Create();
         }
-
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (dropdown.value == dropdownreturn) dropdown.value = 0;
+            else dropdown.value++;
+        }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            //All UI Invisible
+            if (Canvas.activeSelf == false)
+            {
+                Canvas.SetActive(true);
+            }
+            else
+            {
+                Canvas.SetActive(false);
+            }
+        }
     }
 
     //ê∂ê¨
