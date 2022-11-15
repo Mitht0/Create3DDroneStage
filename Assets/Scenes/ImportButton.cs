@@ -120,7 +120,7 @@ public class ImportButton : MonoBehaviour
         string jsonstr = JsonUtility.ToJson(data);
         Debug.Log(jsonstr);
         CopyWebGL(jsonstr);
-        a.text = "Copy";
+        a.text = "Copy!!";
     }
 
     /*DebugWebGLでフォルダ選択し、ファイル出力(未完成)

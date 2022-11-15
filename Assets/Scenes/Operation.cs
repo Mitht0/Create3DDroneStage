@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Operation : MonoBehaviour
 {
@@ -8,7 +9,6 @@ public class Operation : MonoBehaviour
     private GameObject Object;
     //回転変数の取得のためのスクリプト
     public CreateBlock CreateBlockScript;
-    
 
     // Update is called once per frame
     void Update()

@@ -45703,6 +45703,10 @@ struct CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908  : public MonoBehav
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BlockView_14;
 	// TMPro.TMP_Dropdown CreateBlock::dropdown
 	TMP_Dropdown_t73B37BFDA0D005451C7B750938AFB1748E5EA504* ___dropdown_15;
+	// System.Int32 CreateBlock::dropdownreturn
+	int32_t ___dropdownreturn_16;
+	// UnityEngine.GameObject CreateBlock::Canvas
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Canvas_17;
 };
 
 // UnityEngine.UIElements.DropdownField
