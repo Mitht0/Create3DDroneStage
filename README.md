@@ -2,10 +2,13 @@
 
 ## Description
 Telloのドローンを用いる際にコースを仮想的に3Dで作成できるアプリケーション
+
 Blockなどを生成し配置することによってコースを作成し,Lineを使って経路を示す想定
+
 
 ## Application
 https://mitht0.github.io/Create3DDroneStage/
+
 
 ## Usage
 ### 操作
@@ -26,9 +29,12 @@ https://mitht0.github.io/Create3DDroneStage/
 作成したコースを保存,生成することができる機能
 - Importボタンを押すとJSONファイルが選択できるようになり,選択するとJSONファイルに書き込まれたコースデータを取り込み,コースを生成する
 - Exportボタンを押すと今のコースデータがJSONデータでクリップボードにコピーされる
+
 **注**:Export機能を使う場合,JSONファイルは出力されないので自分自身で新しくJSONファイル(.json)を作成し,クリップボードにコピーされたJSONデータをそのファイルに張り付けて保存してください
+
 [コースの保存データ例]
 gitsave
+
 
 ## Environment
 - Unity (Editor2021.3.13f1)
