@@ -1055,6 +1055,8 @@ struct CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220  : public MonoBehavi
 	float ___speed_4;
 	// System.Single CameraMove::angle
 	float ___angle_5;
+	// UnityEngine.GameObject CameraMove::CameraPivot
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___CameraPivot_6;
 };
 
 // CreateBlock
@@ -1619,6 +1621,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_up()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+// UnityEngine.Transform UnityEngine.GameObject::get_transform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::Rotate(System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, float ___xAngle0, float ___yAngle1, float ___zAngle2, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Screen::get_width()
@@ -1649,8 +1653,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.RaycastHit::get_point()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39 (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
-// UnityEngine.Transform UnityEngine.GameObject::get_transform()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Input::GetKeyDown(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2 (int32_t ___key0, const RuntimeMethod* method) ;
 // System.Void CreateBlock::Create()
@@ -1920,14 +1922,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseBlock__ctor_m109C097FB3EF82D9B3A06F3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void CameraMove::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraMove_Start_m9BC4AAF6D2DC912359A2DB5C7689DB27DBF4BA51 (CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220* __this, const RuntimeMethod* method) 
-{
-	{
-		// }
-		return;
-	}
-}
 // System.Void CameraMove::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraMove_Update_mE9E960AB865A8E65A6E1E57ABA98827B43DBE9BC (CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220* __this, const RuntimeMethod* method) 
 {
@@ -2135,80 +2129,82 @@ IL_0186:
 		L_66 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)101), NULL);
 		if (!L_66)
 		{
-			goto IL_01b0;
+			goto IL_01b5;
 		}
 	}
 	{
-		// transform.Rotate(angle * Time.deltaTime, 0, 0);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_67;
-		L_67 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_68 = __this->___angle_5;
-		float L_69;
-		L_69 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_67, ((float)il2cpp_codegen_multiply(L_68, L_69)), (0.0f), (0.0f), NULL);
+		// CameraPivot.transform.Rotate(angle * Time.deltaTime, 0, 0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_67 = __this->___CameraPivot_6;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_68;
+		L_68 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_67, NULL);
+		float L_69 = __this->___angle_5;
+		float L_70;
+		L_70 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_68, ((float)il2cpp_codegen_multiply(L_69, L_70)), (0.0f), (0.0f), NULL);
 	}
 
-IL_01b0:
+IL_01b5:
 	{
 		// if (Input.GetKey(KeyCode.Q))
-		bool L_70;
-		L_70 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)113), NULL);
-		if (!L_70)
+		bool L_71;
+		L_71 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)113), NULL);
+		if (!L_71)
 		{
-			goto IL_01db;
+			goto IL_01e5;
 		}
 	}
 	{
-		// transform.Rotate(-angle * Time.deltaTime, 0, 0);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_71;
-		L_71 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_72 = __this->___angle_5;
-		float L_73;
-		L_73 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_71, ((float)il2cpp_codegen_multiply(((-L_72)), L_73)), (0.0f), (0.0f), NULL);
+		// CameraPivot.transform.Rotate(-angle * Time.deltaTime, 0, 0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_72 = __this->___CameraPivot_6;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_73;
+		L_73 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_72, NULL);
+		float L_74 = __this->___angle_5;
+		float L_75;
+		L_75 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_73, ((float)il2cpp_codegen_multiply(((-L_74)), L_75)), (0.0f), (0.0f), NULL);
 	}
 
-IL_01db:
+IL_01e5:
 	{
 		// if (Input.GetKey(KeyCode.D))
-		bool L_74;
-		L_74 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)100), NULL);
-		if (!L_74)
+		bool L_76;
+		L_76 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)100), NULL);
+		if (!L_76)
 		{
-			goto IL_0205;
+			goto IL_020f;
 		}
 	}
 	{
 		// transform.Rotate(0, angle * Time.deltaTime, 0);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_75;
-		L_75 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_76 = __this->___angle_5;
-		float L_77;
-		L_77 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_75, (0.0f), ((float)il2cpp_codegen_multiply(L_76, L_77)), (0.0f), NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_77;
+		L_77 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_78 = __this->___angle_5;
+		float L_79;
+		L_79 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_77, (0.0f), ((float)il2cpp_codegen_multiply(L_78, L_79)), (0.0f), NULL);
 	}
 
-IL_0205:
+IL_020f:
 	{
 		// if (Input.GetKey(KeyCode.A))
-		bool L_78;
-		L_78 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)97), NULL);
-		if (!L_78)
+		bool L_80;
+		L_80 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)97), NULL);
+		if (!L_80)
 		{
-			goto IL_0230;
+			goto IL_023a;
 		}
 	}
 	{
 		// transform.Rotate(0, -angle * Time.deltaTime, 0);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_79;
-		L_79 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_80 = __this->___angle_5;
-		float L_81;
-		L_81 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_79, (0.0f), ((float)il2cpp_codegen_multiply(((-L_80)), L_81)), (0.0f), NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_81;
+		L_81 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_82 = __this->___angle_5;
+		float L_83;
+		L_83 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_81, (0.0f), ((float)il2cpp_codegen_multiply(((-L_82)), L_83)), (0.0f), NULL);
 	}
 
-IL_0230:
+IL_023a:
 	{
 		// }
 		return;
