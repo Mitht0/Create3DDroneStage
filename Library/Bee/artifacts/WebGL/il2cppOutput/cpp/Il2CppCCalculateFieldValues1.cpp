@@ -6176,6 +6176,8 @@ struct CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220  : public MonoBehavi
 	float ___speed_4;
 	// System.Single CameraMove::angle
 	float ___angle_5;
+	// UnityEngine.GameObject CameraMove::CameraPivot
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___CameraPivot_6;
 };
 
 // CreateBlock
@@ -7115,9 +7117,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3388[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3390[4] = 
 {
 	static_cast<int32_t>(offsetof(BaseBlock_tDA12E8F9836281BBAF2FF69F25C35F43FA4BD742, ___prefab_4)),static_cast<int32_t>(offsetof(BaseBlock_tDA12E8F9836281BBAF2FF69F25C35F43FA4BD742, ___quantity_5)),static_cast<int32_t>(offsetof(BaseBlock_tDA12E8F9836281BBAF2FF69F25C35F43FA4BD742, ___xPos_6)),static_cast<int32_t>(offsetof(BaseBlock_tDA12E8F9836281BBAF2FF69F25C35F43FA4BD742, ___zPos_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3391[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3391[3] = 
 {
-	static_cast<int32_t>(offsetof(CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220, ___speed_4)),static_cast<int32_t>(offsetof(CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220, ___angle_5)),};
+	static_cast<int32_t>(offsetof(CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220, ___speed_4)),static_cast<int32_t>(offsetof(CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220, ___angle_5)),static_cast<int32_t>(offsetof(CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220, ___CameraPivot_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3392[14] = 
 {
 	static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___angleX_4)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___angleY_5)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___displayCenter_6)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___pos_7)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___hit_8)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___Prefab_9)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___blockPrefab_10)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___ringPrefab_11)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___MPadPrefab_12)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___LinePrefab_13)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___BlockView_14)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___dropdown_15)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___dropdownreturn_16)),static_cast<int32_t>(offsetof(CreateBlock_tE36298100D6B0DCB44C799AAB91F6502EB95B908, ___Canvas_17)),};
