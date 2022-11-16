@@ -6,11 +6,9 @@ public class CameraMove : MonoBehaviour
 {
     public float speed = 1.0f;
     public float angle = 50.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    //カメラオブジェクト
+    public GameObject CameraPivot;
 
     // Update is called once per frame
     void Update()
@@ -43,11 +41,11 @@ public class CameraMove : MonoBehaviour
         //回転
         if (Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(angle * Time.deltaTime, 0, 0);
+            CameraPivot.transform.Rotate(angle * Time.deltaTime, 0, 0);
         }
         if (Input.GetKey(KeyCode.Q))
         {
-            transform.Rotate(-angle * Time.deltaTime, 0, 0);
+            CameraPivot.transform.Rotate(-angle * Time.deltaTime, 0, 0);
         }
         if (Input.GetKey(KeyCode.D))
         {

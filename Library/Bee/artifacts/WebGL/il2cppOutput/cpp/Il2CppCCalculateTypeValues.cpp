@@ -45674,6 +45674,8 @@ struct CameraMove_t23DC216F2FEE6FAB9028C55F387423FE67634220  : public MonoBehavi
 	float ___speed_4;
 	// System.Single CameraMove::angle
 	float ___angle_5;
+	// UnityEngine.GameObject CameraMove::CameraPivot
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___CameraPivot_6;
 };
 
 // CreateBlock

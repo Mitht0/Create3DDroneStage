@@ -137,6 +137,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -266,7 +268,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 02d97710f3508f389516f50770776418
+      Hash: e87f4054b96566a547961957ee1a1638
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraMove

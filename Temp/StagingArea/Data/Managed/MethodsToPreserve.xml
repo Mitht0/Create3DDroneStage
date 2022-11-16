@@ -1,0 +1,23 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="CreateBlock">
+			<method name="ChangeMaterial"/>
+			<method name="Create"/>
+		</type>
+		<type fullname="ImportButton">
+			<method name="DebugExportJSON"/>
+			<method name="DebugImportJSON"/>
+			<method name="ExportJSON"/>
+			<method name="OnButtonPointerDown"/>
+		</type>
+		<type fullname="Operation">
+			<method name="Destroy"/>
+			<method name="RotateX"/>
+			<method name="RotateY"/>
+		</type>
+		<type fullname="Setting">
+			<method name="Active"/>
+			<method name="AllDestroy"/>
+		</type>
+	</assembly>
+</linker>
