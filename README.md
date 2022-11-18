@@ -34,8 +34,8 @@ https://mitht0.github.io/Create3DDroneStage/
 
 **注:Export機能を使う場合,JSONファイルは出力されないので自分自身で新しくJSONファイル(.json)を作成し,クリップボードにコピーされたJSONデータをそのファイルに張り付けて保存してください**
 
-### コースの保存データ例
-gitsave
+### コースの保存データ
+https://github.com/Mitht0/Create3DDroneStage_JSONData
 
 
 # Environment
